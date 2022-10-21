@@ -37,6 +37,26 @@
                 <li>ES12: (Junio 2021)</li>
             </ul>
             <p>Desde ES1 a ES6 es lo que se conoce como código seguro ya que es compatible con todos los navegadores y motores que corran JavaScript al 100%.</p>
+            <h2>2) ¿Cómo se integra JavaScript a HTML?</h2>
+            <p>JavaScript es un lenguaje utilizado principalmente con el lenguaje HTML, es un lenguaje interpretado que se embebe en una página web HTML. Un lenguaje interpretado significa que a las instrucciones las analiza y procesa el navegador en el
+                momento que deben ser ejecutadas. Hay varias formas de introducir JavaScript a HTML:</p>
+            <ul>
+                <li>Agregar JavaScript directamente a un archivo HTML usando las etiquetas <b>&lt;script&gt; &lt;/script&gt;</b>, envolviendo todo el código JS que se agrega:
+                    <ul>
+                        <li>Entre las etiquetas &lt;head&gt; &lt;/head&gt; </li>
+                        <li>Entre las etiquetas &lt;body&gt; &lt;/body&gt; </li>
+                    </ul>
+                </li>
+                <li>Agregar código JavaScript a un archivo separado (archivo externo):
+                    <ul>
+                        <li>Entre las etiquetas &lt;body&gt; &lt;/body&gt; <br/> Ejemplo: &lt;script src="./script.js"&gt;&lt;/script&gt; <br/> Esto apuntaría a un archivo llamado "script.js" que está en el mismo directorio o carpeta del archivo .html. También
+                            se puede enlazar a otras carpetas usando ".." en la ruta del archivo. <br/> Ejemplo: &lt;script src="js/script.js"&gt;&lt;/script&gt; Este ejemplo también apunta a un archivo llamado "script.js" pero en otra carpeta distinta
+                            a la del archivo .html.</li>
+                        <li>Entre las etiquetas &lt;head&gt; &lt;/head&gt; de la misma forma que en el body.</li>
+                    </ul>
+                </li>
+            </ul>
+
 
         </div>
     </div>
