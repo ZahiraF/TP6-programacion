@@ -100,7 +100,84 @@
             <p>Declara una variable local en un bloque de ámbito, iniciandola opcionalmente en un valor. Su valor puede cambiar.</p>
             <h3>Const</h3>
             <p>Declara una variabled e solo lectura en un bloque de ámbito. No es posible cambiar su valor mediante la asignación.</p>
-
+            <h2>5) ¿Cuáles son los operadores y conversión entre tipos?</h2>
+            <h3>Operador de asignación</h3>
+            <p>El operador de asignacion es el símbolo de igualdad (=), y sirve para asignarle un valor a una variable.</p>
+            <h3>Adición o suma </h3>
+            <p>Se usa el símbolo "+" <br/> Ejemplo: a + b</p>
+            <h3>Multiplicación</h3>
+            <p>Se usa el símbolo "*" <br/> Ejemplo: a * b</p>
+            <h3>Sustracción o resta</h3>
+            <p>Se usa el símbolo "-" <br/> Ejemplo: a - b</p>
+            <h3>División</h3>
+            <p>Se usa el símbolo "/" <br/> Ejemplo: a / b</p>
+            <h3>Resto o módulo</h3>
+            <p>Se usa el símbolo "%" <br/> Ejemplo: a % b</p>
+            <h3>Exponenciación</h3>
+            <p>Se usa el simbolo "**" <br/> Ejemplo: a ** b -> Eleva "a" a la potencia "b" (a<sup>b</sup>). Equivale a Math.pow(a, b).</p>
+            <h3>Operadores de comparación</h3>
+            <p>Aquellos que se utilizan en el código (generalmente, en el interior de un if, aunque no es el único lugar donde se pueden usar) para realizar comprobaciones. Estas expresiones de comparación devuelven un booleano con un valor de true o false.</p>
+            <ul>
+                <li><b>Igualdad</b> Devuelve el valor true si ambos operandos son iguales (==)</li>
+                <li><b>Desigualdad</b> Devuelve el valor true si ambos operandos NO son iguales (!=)</li>
+                <li><b>Estrictamente iguales</b> Devuelve el valor true si ambos operandos son iguales y tienen el mismo tipo (===)</li>
+                <li><b>Estrictamente desiguales</b> Devuelve el valor true si ambos operandos no son iguales y/o no son del mismo tipo. </li>
+                <li><b>Mayor que</b> Devuelve el valor true si el operando de la izquierda es mayor al de la derecha(>)</li>
+                <li><b>Mayor o igual que</b> Devuelve el valor true si el operando de la izquierda es mayor o igual al de la derecha (>=)</li>
+                <li><b>Menor que</b> Devuelve el valor true si el operando de la izquierda es menor al de la derecha (&lt;)</li>
+                <li><b>Menor o igual que</b> Devuelve el valor true si el operando de la izquierda es menor o igual al de la derecha (&lt;=)</li>
+            </ul>
+            <h3>Operadores aritméticos</h3>
+            <ul>
+                <li><b>incremento (++)</b> Incrementa en una unidad al operando
+                    <ul>
+                        <li>Si se usa ++x devuelve el valor del operando despues de añadirle 1. Ejemplo: si x=3 y se usa ++x entonces devuelve 4. </li>
+                        <li>Si se usa x++ devuelve el valor del operando antes de añadirle 1. Ejemplo: si x=3 y se usa x++ entonces devuelve 3 y después establece 4.</li>
+                    </ul>
+                </li>
+                <li><b>decremento (--)</b> Resta una unidad al operando, y depende su posición respecto al operando tiene el mismo comportamiento que el incremento.
+                    <ul>
+                        <li>Si se usa --x y x=3 entonces x=2</li>
+                        <li>Si se usa x-- y x=3 entonces devuelve 3 y luego establece que x=2</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Operador de concatenación</h3>
+            <p>Une dos valores de tipo <b>String</b>, devolviendo otro String correspondiente a la unión. <br/> Ejemplo: console.log("soy" + "Zahira"); // Soy Zahira </p>
+            <h3>Operadores binarios</h3>
+            <p>Permiten realizar operaciones básicas trabajando a nivel binario, donde los operandos solo pueden tomar valores de 0 o 1.</p>
+            <ul>
+                <li><b>AND</b>
+                    <p>Se usa el símbolo "&" <br/> Ejemplo: <br/> a & b -> Devuelve 1 si ambos operandos son 1.</p>
+                </li>
+                <li><b>OR</b>
+                    <p>Se usa el símbolo "|" <br/> Ejemplo: <br/> a | b -> Devuelve 1 si al menos un operando es 1.</p>
+                </li>
+                <li><b>XOR (OR exclusivo)</b>
+                    <p>Se usa el símbolo "^" <br/> Ejemplo: <br/> a ^ b -> Devuelve 1 si ambos operandos son diferentes.</p>
+                </li>
+            </ul>
+            <h3>Conversión de tipos de datos</h3>
+            <ul>
+                <li><b>ToString</b>
+                    <p>Se usa cuando se necesita la representación en forma de texto de un valor. Se puede también llamar a la función String(value) para convertir un valor a string. </p>
+                    <p>Por ejemplo: El boolean false se convertiría en "false", o null pasaría a ser "null" </p>
+                </li>
+                <li><b>ToNumber</b>
+                    <p>Ocurre automáticamente en funciones matemáticas y expresiones. Se puede usar la función Number(value) para convertir de forma explícita un valor a un número y es usualmente requerida cuando leemos un valor desde una fuente basada en
+                        texto, como los campos de texto en los formularios, pero que se espera que contengan un valor numérico.</p>
+                    <p>Si el string no es un número válido el resultado de la conversión da como resultado NaN (Not a Number). También se eliminan los espacios (incluyendo tabs, saltos de línea) al inicio y final del texto. Si el string esta vacío, el resultado
+                        será 0. Null y undefined se comportan de distinta manera; null se convierte en 0 y undefined pasa a ser NaN.</p>
+                    <p>Casi todas las opraaciones matemáticas convierten valores a números, pero hay una excpción en las sumas; si uno de los valores que se suma es un string, el otro valor también se convierte a string y luego los concatena o une. Por ejemplo:</p>
+                    <p>alert( 1 + '2' ); // Da como resultado '12' </p>
+                    <p>alert( '1' + 2 ); // Da como resultado '12' </p>
+                    <p>Esto ocurre solo si al menos uno de los argumentos es un string, en caso contrario los valores son convertidos a número.</p>
+                </li>
+                <li><b>ToBoolean</b>
+                    <p>Es la conversión más simple, y se usa en operaciones lógicas, test condicionales y similares. Puede realizarse de forma explícita llamando la función Boolean(value).</p>
+                    <p>Como reglas de conversión, los valores "vacíos" como 0, "null", "", undefined, y NaN son convertidos a false, y otros valores se convierten en true. Un string con valor "0" es tomado como true.</p>
+                </li>
+            </ul>
         </div>
     </div>
 </body>
