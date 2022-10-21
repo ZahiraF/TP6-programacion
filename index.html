@@ -234,6 +234,30 @@
                 los Object y Array. </p>
             <h2>9) ¿Cuáles son todos los eventos que trabaja JS?</h2>
             <p></p>
+            <h2>10) Con toda la investigación que generaron deben de generar un formulario que realice las siguientes funciones.
+                <ol type="a">
+                    <li>Que obtenga los datos del input.</li>
+                    <li>Que verifique los datos que se ingresan en el input.</li>
+                    <li>Que el formulario presente una calculo de sumatoria para validar "que no sos un robot”.</li>
+                </ol>
+            </h2>
+
+            <form method="post" action="#">
+                <fieldset>
+                    <label for="nombre">Nombre</label><br />
+                    <input type="text" name="nombre" id="nombre" /><br />
+                    <label for="apellido">Apellido</label><br />
+                    <input type="text" name="apellido" id="apellido" /><br />
+                    <label for="edad">EDAD</label><br />
+                    <input type="text" name="edad" id="edad" maxlength="2" /><br />
+                    <label>Sexo</label><br />
+                    <input type="radio" name="sexo" value="Hombre" checked="checked" id="hombre" /><label for="hombre">Hombre</label><br />
+                    <input type="radio" name="sexo" value="Mujer" id="mujer" /><label for="mujer">Mujer</label><br />
+                    <input type="checkbox" name="suscribir" value="suscribir" id="robot" /> <label for="robot">No soy un robot </label><br />
+                    <button>guardar</button>
+                    <input type="submit" name="borrar" value="borrar los datos introducidos" />
+                </fieldset>
+            </form>
         </div>
     </div>
 </body>
