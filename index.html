@@ -178,6 +178,45 @@
                     <p>Como reglas de conversión, los valores "vacíos" como 0, "null", "", undefined, y NaN son convertidos a false, y otros valores se convierten en true. Un string con valor "0" es tomado como true.</p>
                 </li>
             </ul>
+            <h2>6) ¿Cuáles son las estructuras de control de JS?</h2>
+            <ul>
+                <li><b>Estructuras de control condicionales</b>
+                    <ul>
+                        <li><b>If</b> Si se cumple la condición que se establezca, hacer tal cosa.<br/> Ejemplo:
+                            <br/> if (nota >= 5) { <br/> //las instrucciones se esriben acá <br/> console.log("¡Alumno aprobado!");<br/> }
+                        </li>
+                        <li><b>If/else</b> Se establece una alternativa a una condición. Se establece una acción "A" si la condición se cumple, si no se cumple, se ejecuta la acción "B". <br/> Ejemplo: <br/> if (nota >= 5) { <br/> //las instrucciones se esriben
+                            acá <br/> estoy=" aprobado!";<br/> } else { <br/> //acción alternativa <br/> estoy=" desaprobado!"; <br/> } <br/> console.log("Estoy", estoy);</li>
+                        <li><b>?: (Operador ternario)</b> Equivalente a if/else, en una sóla línea, es un método abreviado. </li>
+                        <li><b>Switch</b> Estructura para casos específicos, similar a varios if/else anidados. Está indicado para utilizar sólo con casos con valores concretos y específicos.</li>
+                    </ul>
+                </li>
+                <br/>
+                <li><b>Bucles y repeticiones</b>
+                    <p>Son una forma rápida y sencilla de hacer algo repetidamente</p>
+                    <ul>
+                        <li><b>While</b>
+                            <p>Ejecuta sus sentencias mientras la condición sea verdadera.</p>
+                        </li>
+                        <li><b>For</b>
+                            <p>El bucle se repite hasta que la condición especificada sea falsa.</p>
+                        </li>
+                        <li><b>do...while</b>
+                            <p>Se repite hasta que la condición especificada sea falsa. La sentencia se ejecuta antes de ser evaluada. Si la condición es true, la sentencia se ejecuta de nuevo, osea que la sentencia al menos una vez va a ser ejecutada.</p>
+                        </li>
+                        <li><b>for...in</b>
+                            <p>solo itera sobre propiedades enumerables que no son símbolo. Los objetos creados a partir de constructores integrados como Array y Object han heredado propiedades no enumerables de Object.prototype y String.prototype, como
+                                el método indexOf() de String o el método toString() de Object. El bucle iterará sobre todas las propiedades enumerables del objeto en sí y aquellas que el objeto hereda de su cadena de prototipos (las propiedades de los
+                                prototipos más cercanos tienen prioridad sobre las de los prototipos más alejados del objeto en su cadena de prototipos).</p>
+                        </li>
+                        <li><b>for...of</b>
+                            <p>Estructura repetitiva para recorrer todos los elementos de un array, string, map, set etc.</p>
+                        </li>
+                        <li><b>Bucles sobre arrays</b></li>
+                    </ul>
+                </li>
+            </ul>
+
         </div>
     </div>
 </body>
